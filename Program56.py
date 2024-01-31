@@ -18,4 +18,25 @@ def matrix_product(matrix1, matrix2):
 
 # Example usage:
 matrix1 = [
-    [1, 
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+matrix2 = [
+    [9, 8, 7],
+    [6, 5, 4],
+    [3, 2, 1]
+]
+
+result_matrix = matrix_product(matrix1, matrix2)
+
+if result_matrix is not None:
+    print("Matrix 1:")
+    print(np.array(matrix1))
+
+    print("\nMatrix 2:")
+    print(np.array(matrix2))
+
+    print("\nProduct of Matrices:")
+    print(result_matrix)
